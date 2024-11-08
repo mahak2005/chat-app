@@ -1,0 +1,150 @@
+/* globals.css */
+
+/* Reset margin, padding and box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a consistent font across the app */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a202c; /* Dark background color */
+  color: #e2e8f0; /* Light text color for good contrast */
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set a background for the page */
+html, body {
+  height: 100%;
+}
+
+/* Basic styles for links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for containers and pages */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Style buttons globally */
+button {
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
+
+/* Responsive Flexbox layout for small screens */
+@media screen and (max-width: 768px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Specific styles for the chat input */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #2d3748;
+  color: white;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4A90E2;
+}
+
+input[type="text"]::placeholder {
+  color: #a0aec0;
+}
+
+/* Styles for the overall chat container */
+.m-10 {
+  margin: 10px;
+}
+
+/* .h-[600px] {
+  height: 600px;
+} */
+
+.flex {
+  display: flex;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.bg-zinc-700 {
+  background-color: #2d3748;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Overflow-y-auto for scrolling */
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+/* Styling for chat message bubbles */
+.bg-zinc-700 {
+  background-color: #2d3748;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
